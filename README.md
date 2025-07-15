@@ -1,0 +1,1 @@
+# vyhledac-obraxku
