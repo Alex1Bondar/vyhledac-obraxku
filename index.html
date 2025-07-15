@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vyhledávač obrázků</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 id="nazev">Vyhledávač obrazku</h1>
+
+  <form id="search-form">
+    <input type="text" id="query" placeholder="Hledat obrázky..." />
+    <button type="submit">Hledat</button>
+    <label>
+      <input type="checkbox" id="only-favorites" />
+      Jen oblíbené
+    </label>
+  </form>
+
+  <div id="gallery"></div>
+
+  <div id="pagination" class="hidden">
+    <button id="prev-btn">⏮ Předchozí</button>
+    <span id="page-info">Stránka 1</span>
+    <button id="next-btn">Další ⏭</button>
+  </div>
+
+  <div id="modal">
+    <div id="modal-content">
+      <span id="close">&times;</span>
+      <img id="modal-image" src="" alt="" />
+      <div id="modal-info"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
